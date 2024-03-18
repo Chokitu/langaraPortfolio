@@ -3,6 +3,7 @@
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
+
     color: #fff;
 }
 
@@ -39,3 +40,6 @@ footer {
     font-weight: bold;
     color: black; 
 }
+=======
+    color: blue;
+
