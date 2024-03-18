@@ -5,21 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Custom CSS -->
-
-
     <link href="styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-white-600">
+    <!-- Navigation Bar -->
+    <nav class="custom-bg-color p-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">My Portfolio</a>
+            <div class="flex space-x-4">
+                <a href="#bio" class="text-white hover:text-gray-300">Bio</a>
+                <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
+                <a href="#skills" class="text-white hover:text-gray-300">Skills</a>
+                <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+                <a href="#resume" class="text-white hover:text-gray-300">Resume</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Add some space between navbar and content -->
+    <div class="h-20"></div>
+    <h2 class="text-3xl font-bold mb-2 text-center text-black">Daniel Posvolsky Bujarski</h2>
 
-    <section>
+    <!-- Bio Section -->
+    <section id="bio" class="container mx-auto py-8">
+        <div class="centered-image mb-8">
+            <div class="centered-image mb-8 md:mb-0">
+            <img src="bio_image.png" alt="Bio Image" class="mx-auto w-80 md:w-80">
+        </div>
+        <div class="h-20"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
             
             <div>
                 
-                <p>I am a young and energetic professional with six years of experience working
+                <p class="text-gray-400">I am a young and energetic professional with six years of experience working
                     on various projects. Throughout my career, I have demonstrated excellent customer service skills by
                     continuously engaging with customers and building strong relationships. My ability to understand and
                     address customer needs has resulted in high levels of customer satisfaction. Additionally, I possess
@@ -28,7 +53,7 @@
                     contribute effectively to the development of software solutions.</p>
             </div>
             <div>
-                <p>I actively engage in analyzing
+                <p class="text-gray-400">I actively engage in analyzing
                     project requirements, designing and implementing solutions, and troubleshooting technical issues
                     as needed. My adaptability is one of my strengths, as I am able to quickly adapt to changing
                     project requirements and seamlessly integrate into new teams and tasks. Strong problem-solving
@@ -43,37 +68,38 @@
         </div>
     </section>
 
-    <section>
-        <div >
-            >
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-8">
+        <div class="flex justify-center mb-8">
+            <img src="projects_image.jpg" alt="Projects Image">
         </div>
-        <h2 >
-        <div >
-            <a href="https://github.com/Chokitu/2350-Project" >
-            <a href="https://github.com/Chokitu/Gerador-de-Imagem-do-BBB" >
-            <a href="https://chokitu.github.io/chatsecreto" >
-            <a href="https://github.com/Chokitu/chokituportfolio" >
-            <a href="https://chokitu.com/" >
-            <a href="https://twitter.com/rpdosstreamers" >
+        <h2 class="text-3xl font-bold mb-2 text-center text-black">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="https://github.com/Chokitu/2350-Project" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">AILearnt</a>
+            <a href="https://github.com/Chokitu/Gerador-de-Imagem-do-BBB" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">Image Generator</a>
+            <a href="https://chokitu.github.io/chatsecreto" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">Secret Chatting</a>
+            <a href="https://github.com/Chokitu/chokituportfolio" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">3D Portfolios</a>
+            <a href="https://chokitu.com/" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">Game Modding</a>
+            <a href="https://twitter.com/rpdosstreamers" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block text-center">Streamers RP</a>
         </div>
     </section>
     
     
 
-
-    <section id="skills" >
-        <div >
-            >
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-8">
+        <div class="centered-image mb-8">
+            <img src="skills_image.jpg" alt="Skills Image" width="2048" height="1229">
         </div>
-        <h2 >
-        <p >
-        <p >
+        <h2 class="text-3xl font-bold mb-4 text-center text-black">Skills</h2>
+        <p class="text-lg text-center">JavaScript, HTML, CSS, React, Node.js, MongoDB, Git, C#, C++, C, Java, Python</p>
+        <p class="text-gray-400 text-center">Throughout my freelance career, I have successfully completed a diverse range
             of projects for clients across various industries. These projects have included developing custom web
             applications, designing responsive websites, creating mobile applications, and integrating APIs. I am
             dedicated to staying updated with the latest industry trends and technologies, continuously expanding my
             skill set to provide cutting-edge solutions to clients. My passion for programming and attention to detail
             ensure that every project I undertake is of the highest quality.
-            <ul >
+            <ul class="list-disc list-inside text-gray-400 pl-4">
                 <li>Implemented web interfaces using HTML, CSS, and JavaScript.</li>
                 <li>Created different games with different languages and engines.</li>
                 <li>Developed solutions for companies.</li>
@@ -81,14 +107,36 @@
         </p>
     </section>
 
+<!-- Contact Section -->
+<section id="contact" class="container mx-auto py-8">
+    <h2 class="text-3xl font-bold mb-4 text-center text-black">Contact</h2>
+    <p class="text-lg text-center text-black">Connect with me on <a href="https://www.linkedin.com/in/daniel-posvolsky-bujarski-698433244/" class="text-blue-500 hover:underline">LinkedIn</a> or click the button below to send me an email.</p>
+    <div class="flex justify-center mt-4">
+        <a href="mailto:daniel.tov@hotmail.com" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Email</a>
+    </div>
+</section>
 
+    
+
+    <!-- Resume Section -->
+    <section id="resume" class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-4 text-center text-black">Resume</h2>
+        <div class="flex justify-center">
+            <a href="resume.pdf" download class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Open my Resume</a>
+        </div>
+    </section>
+    <div class="h-20"></div>
+
+    <div class="flex justify-center">
+    <button id="scrollToTopButton" class="custom-bg-color hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Bring me back to the top</button>
+    </div>
+    <div class="h-20"></div>
     <!-- Footer -->
-    <footer >
+    <footer class="custom-bg-color text-white text-center py-4">
         <p>&copy; 2024 Daniel Posvolsky Bujarski. All rights reserved.</p>
     </footer>
     
     <script src="script.js"></script>
 </body>
-
 
 </html>
