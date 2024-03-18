@@ -3,4 +3,43 @@
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
+
+    color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Sections */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Hover Effect for Links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.custom-bg-color {
+    background-color: rgba(94, 180, 231, 1);
+}
+
+.active {
+    font-weight: bold;
+    color: black; 
+}
+=======
     color: blue;
+
