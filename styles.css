@@ -1,27 +1,26 @@
 
-/* Body */
+
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
 }
 
-/* Container */
 .container {
     max-width: 1200px;
 }
 
-/* Sections */
+
 section {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
-/* Hover Effect for Links */
+
 a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: white;
     color: #fff;

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling
+
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
         link.addEventListener("click", function(e) {
